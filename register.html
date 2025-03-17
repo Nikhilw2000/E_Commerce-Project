@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration</title>
+    <link rel="stylesheet" href="Index.css">
+    <script src="register_validation.js"></script>
+</head>
+
+<body>
+
+    <main>
+        <div class="register_box">
+            <h2>Register User</h2>
+            <form method="post" id="registerForm">
+                <input name="first_name" id="firstname" placeholder="Enter first name" type="text">
+                <p id="message" class="err_firstname"></p>
+                <input name="last_name" id="lastname" placeholder="Enter last name" type="text">
+                <p id="message" class="err_lastname"></p>
+                <input name="email" id="email" placeholder="Enter email" type="email" onblur="checkEmailExists()">
+                <p id="message" class="err_email"></p>
+                <input name="phone_no" id="phonenumber" placeholder="Enter phone number" type="number">
+                <p id="message" class="err_phonenumber"></p>
+                <input name="date_of_birth" id="DOB" placeholder="Enter date of birth" type="date">
+                <p id="message" class="err_DOB"></p>
+                <input name="password" id="password" placeholder="Enter password" type="password">
+                <p id="message" class="err_password"></p>
+                <input name="conf_password" id="confpassword" placeholder="Confirm password" type="password">
+                <p id="message" class="err_confpassword"></p>
+                <button type="submit" class="register_button">Register</button>
+            </form>
+            <p>already have an account <a href="log_in.html">sign in</a></p>
+        </div>
+    </main>
+
+</body>
+
+</html>
